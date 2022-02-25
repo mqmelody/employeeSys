@@ -1,0 +1,28 @@
+spring:
+  servlet:    multipart:      enabled: true
+      max-file-size: 20MB
+#  thymeleaf:#    prefix: :/templates/
+#    suffix: .html
+#    mode: HTML5
+#    encoding: UTF-8
+#    cache: false
+#  resources:
+#    static-locations: classpath:/static/,file:D:/equipment/
+  #配置数据源
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/performance_appraisal_system?serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+   
+#配置mybatis规则
+#mybatis-plus:#  mapper-locations: classpath:/mapper/*.xml
+#  configuration:
+#    map-underscore-to-camel-case: true
+   
+server:
+  port: 8082
+    tomcat:    uri-encoding: UTF-8
+    
+ 
+
